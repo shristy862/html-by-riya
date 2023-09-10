@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+}
+header .box{
+    /* background-color: cornflowerblue; */
+    height: 700px;
+    width: 100%;
+}
+header .box .nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+}
+header .box .nav .left{
+    height: 80px;
+    width: 15%;
+    /* background-color: aquamarine; */
+    margin-left: 80px;
+}
+header .box .nav .left  a > img{
+    padding: 10px;
+    height: 70px;
+}
+header .box .nav .right{
+    height: 80px;
+    width: 40px;
+    /* background-color: bisque; */
+    margin-left: 70%;
+}
+header .box .nav .right p{
+    color: rgb(96, 179, 247);
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.90em;
+    display: flex;
+    justify-content: end;
+}
+header .main{
+    height: 620px;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+}
+header .main .create-account{
+    height: 610px;
+    width: 25%;
+    /* background-color: coral; */
+    box-shadow: 0px 2px 5px  #727272;
+}
+.create-account .logo{
+    height: 120px;
+    width: 100%;
+    /* background-color: bisque; */
+    text-align: center;
+    position: relative;
+}
+.logo a > img{
+    height: 50px;
+    padding: 10px;
+}
+.logo h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    
+}
+.logo input[type=text],
+[type=password],
+[type=date]{
+    margin-top: 10px;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    width: 84.5%;
+    height: 30px;
+}
+
+.logo .icon{
+    position: absolute;
+    margin-top: 22px;
+    color: #504f4f;
+}
+.logo h5{
+    font-size: 0.85em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #707070;
+    font-weight: 100;
+}
+.blue{
+    color:  rgb(96, 179, 247);;
+}
+.logo .mail{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -40px;
+    color: rgb(89, 88, 88);
+}
+.logo .button1{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color:  #188fff;
+    width: 78%;
+    margin-left: 39px;
+    height: 45px;
+    color: white;
+    font-size:larger ;
+    margin-top: 50px;
+}
+.logo h3{
+    font-size: 0.95em;
+    margin-top: 30px ;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: 100;
+}
+header .logo .fn,.email2,.pass{ 
+    position: absolute;
+}
+header .logo .fn{
+    top: 147px;
+    right: 82px;
+    background-color: white;
+    padding: 4px;
+    width: 250px;
+    text-align: left;
+    transition: linear 0.1s;
+}
+header .logo .split input[type=text]:focus ~ .fn{
+    background-color: white;
+    top: 120px;
+    right: 90px;
+    background-color: transparent;
+}
+header .logo input[type=text], 
+input[type=password],
+input[type=date]{
+    outline: none;
+}
+header.logo .split{
+    background-color: white;
+}
+header .logo .split input[type=text]{
+    width: 40%;
+    /* background-color: red; */
+}
+header .logo .email{
+    width: 55%;
+}
+header .logo select{
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: white;
+    height: 32px;
+    width: 105px;
+}
+header .logo .email2{
+    right: 234px;
+    top: 196px;
+}
+header .logo .pass{
+    /* background-color: red; */
+    right: 297px;
+    top: 260px;
+    transition: linear 0.1s;
+}
+header .logo .p:focus ~ .pass{
+    top: 250px;
+}
+span{
+    color: red;
+    
+}
