@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Height And Width</title>
+</head>
+<style>
+   body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+    /* justify-content: center; */
+   }
+</style>
+<body>
+    <div>
+        <button type="button" onclick="windowSize();">Get Window Size</button>
+    </div>
+    
+
+    <script>
+        function windowSize(){
+            var w = document.documentElement.clientWidth;
+            var h = document.documentElement.clientHeight;
+
+            alert("Width: "+w+","+"Height:" +h);
+        }
+    </script>
+</body>
+</html>
