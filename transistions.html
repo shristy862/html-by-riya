@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 30%;
+            height: auto;
+            padding: 10px;
+            background-color: #F45;
+            transition: all linear 0.5s;
+        }
+        .box div{
+            width: 100px;
+            height: 80px;
+            background-color: aqua;
+            margin-bottom: 5px;
+        }
+        .box div:nth-child(1){
+            transition: all linear 0.3s;
+        }
+        .box div:nth-child(2){
+            transition: all ease 0.3s;
+        }
+        .box div:nth-child(3){
+            transition: all ease-in 0.3s;
+        }
+        .box div:nth-child(4){
+            transition: all ease-out 0.3s;
+        }
+        .box div:nth-child(5){
+            transition: all ease-in-out 0.3s;
+        }
+        .box:hover div{
+            width: 50%;
+        }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+    .boxing{
+        width: 50%;
+        height: 550px;
+        background-color: #485222;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .boxing div{
+        width: 130px;
+        height: 130px;
+        background-color: #F45;
+        transition: all linear 0.3s;
+        padding: 5px;
+        box-sizing: border-box;
+        perspective: 200px;
+    }
+    /* .boxing div:hover{
+        transform: scale(1.8);
+        background-color: #FF0;
+         box-shadow:inset 0px 0px 8px #000;
+         
+    } */
+    .boxing div .k{
+        width: 100%;
+        height: 100%;
+        background-color: violet;
+    }
+    .boxing div .r{
+        width: 100%;
+        height: 100%;
+        background-color: violet;
+    }
+    .boxing div:hover .r{
+        transform: rotatey(-180deg);
+    }
+    .boxing div:hover .k{
+        transform: rotatey(180deg);
+    }
+    /* .boxing div:nth-child(2):hover{
+        transform: rotateY(45deg);
+    }   
+    .boxing div:nth-child(3):hover{
+        transform: translate(15px,15px);
+    }    */
+    </style>
+</head>
+<body>
+    <h1>
+        Transition
+    </h1>
+
+    <div class="boxing">
+        <div></div>
+        <div>
+            <div class="k"></div>
+        </div>
+        <div>
+            <div class="r"></div>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</body>
+</html>
