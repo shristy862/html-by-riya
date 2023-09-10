@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdownmenu</title>
+    <style>
+        ul{
+            width: 70%;
+            height: 60px;
+            /* background-color: brown; */
+            list-style: none;
+            padding: 0%;
+        }
+        ul li{
+            width: 20%;
+            height: 60px;
+            background-color: black;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+        ul li:hover{
+            background-color: gray;
+        }
+        ul li ul{
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        ul li ul li{
+            width: 100%;
+            background-color: black;
+        }
+        .drop2{
+            position: relative;
+            width: 100%;
+            left: 200px;
+            top: -50px;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contacts</a></li>
+        <li><a href="">Services</a></li>
+        <li class="drop"><a href="">Login</a>
+            <ul class="drop1">
+                <li><a href="">Student Login</a></li>
+                <li class="t"><a href="">Teacher Login</a>
+                    <ul class="drop2">
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">SignIn</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Parent Login</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script src="../../../jquery/query/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $("li.drop").hover(function(){
+                $(this).find(".drop1").stop().slideToggle(400);
+                $("li.t").hover(function(){
+                    $(this).find(".drop2").stop().slideToggle(400);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
