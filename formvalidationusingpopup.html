@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my First Popup</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main{
+            height: 400px;
+            width: 400px;
+            background-image: linear-gradient( yellow, pink );
+            text-align: center;
+        }
+        .main input[type=text],[type=email],[type=number]{
+            border-color: black;
+            border-radius: 10px;
+            margin-top: 8%;
+            height: 26px;
+            width: 170px;
+        }
+        .main input[type=button]{
+            border-color: blue;
+            background-color: blueviolet;
+            border-radius: 10px;
+            width: 20%;
+            height: 26px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="pop" onsubmit="return validation()">
+        <div class="main">
+
+            <input type="text" name="user" placeholder="Enter Name"><br>
+            <span id="errName"></span><br>
+            <input type="email"  name="mail"  placeholder="Enter Email Address"><br>
+            <span id="errMail"></span><br>
+            <input type="number"  name="num"  placeholder="Enter Contact no"><br>
+            <span id="errNum"></span><br><br>
+    
+            <input type="radio" id="m" name="gender"><label for="">Male</label>
+            <input type="radio" id="m" name="gender"><label for="">Female</label><br><br>
+            
+            <input type="button" value="Submit" onclick="validation()">
+    
+        </div>
+    </form>
+    <script src="./popup.js"></script>
+</body>
+</html>
