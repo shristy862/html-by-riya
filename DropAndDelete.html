@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQASSignment</title>
+    <link rel="stylesheet" href="../jqui/jquery-ui.min.css" type="text/css" media="all">
+    <style>
+        body{
+            margin: 0;
+            background-image: url(../src/images/1064162.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        .main{
+            height:300px ;
+            width: 700px;
+            /* background-color: black; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/cropped-image-of-man-gardening-at-back-yard-royalty-free-image-902483962-1556136696.jpg) ;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            background-image: url(https://www.bomagardencentre.co.uk/files/images/webshop/lavandula-hidcote-pot-sizes-2l-23cm-lavender-1080x1080-64671eab0cd7c_l.webp) ;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+            background-image: url(https://qvc.scene7.com/is/image/QVC/m/14/m89814.001?$aempdlarge$) ;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        #recycle{
+            height: 250px;
+            width: 250px;
+            background-color: rgba(240, 248, 255, 0.274);
+            margin-top: 150px;
+            margin-left: 650px;
+            text-align: center;
+        }
+        p{
+            font-size: x-large;
+            color: white;
+        }
+    </style> 
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    
+    <div id="recycle">
+        <p> drag here to Recycle </p>
+    </div>
+    
+
+    <script src="../../../jquery/query/jquery-3.7.0.min.js"></script>
+    <script  src="../jqui/jquery-ui.min.js"></script>
+    
+    <script>
+          $(function() {
+            $(".one").draggable();
+            $(".two").draggable();
+            $(".three").draggable();
+
+            $('#recycle').droppable({
+                over: function(event, ui) {
+                 ui.draggable.remove();
+                 
+                }
+            });
+        });
+            
+             
+        
+    </script>
+</body>
+</html>
